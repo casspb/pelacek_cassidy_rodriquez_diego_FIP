@@ -1,0 +1,13 @@
+
+
+ /* ---tablet Sized Screens--- */
+ @media screen and (min-width: 768px) {
+ }
+ 
+ 
+ /* ---desktop Sized Screens--- */
+ @media screen and (min-width: 1200px) { 
+ .desktop-image{
+    display: grid;
+ }
+ }
