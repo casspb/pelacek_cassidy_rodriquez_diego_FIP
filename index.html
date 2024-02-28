@@ -12,35 +12,35 @@
     <title>Responsive Scaffold</title>
 </head>
 <body>
-    <header class="full-width-grid-con" >
-        <div>logo</div>
-        <div> Nav</div>
+    <header class="grid-con flex-order" >
+        <div class="box col-start-1 m-col-start-4 m-col-span-full nav "> Nav</div>
+        <div class="box col-start-2 col-span-3 m-col-start-1 m-col-span-3 logo">logo</div>
     </header>
 
 <main>
-    <section class="hero-image">
+    <section class="hero-image grid-con">
         <h2 class="hidden">Welcome Image</h2>
-        <div> Hero Image</div>
+        <div class="box col-span-full"> Hero Image</div>
     </section>
 
-    <section class="main-content">
-        <article class="product-section">
+    <section class="main-content ">
+        <article class=" grid-con">
             <h2 class="hidden"> product section and company information</h2>
-        <div> Product card</div>
-        <div> Text</div>
+        <div class="box col-span-full m-col-start-1 m-col-span-6 product-section"> Product card</div>
+        <div class="box col-span-full m-col-start-7 main-text"> Text</div>
          </article>
 
-         <article class="company-images">
+         <article class="company-images grid-con">
             <h2 class="hidden"> company images</h2>
-            <div> image 1</div>
-            <div> image 2</div>
-            <div> image 3</div>
+            <div class="box col-span-full m-col-start-1 m-col-span-4"> image 1</div>
+            <div class="box col-span-full m-col-start-5 m-col-span-4"> image 2</div>
+            <div class="box col-span-full m-col-start-9 m-col-span-4"> image 3</div>
          </article>
     </section>
     
-    <section class="subscribe">
+    <section class="subscribe grid-con mobile-hide">
         <h2 class="hidden"> subscribe to news letters</h2>
-        <div> subscribe</div>
+        <div class="box col-span-full "> subscribe</div>
     </section>
  
 </main>
