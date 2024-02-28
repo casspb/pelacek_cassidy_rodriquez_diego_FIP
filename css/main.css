@@ -2,8 +2,6 @@
     display: none;
 }
 
-
-
 .company-images div{
     height: 370px;
 }
@@ -25,7 +23,6 @@ footer div{
 }
  
 .flex-order{
-    display: flexbox;
     flex-wrap: wrap;
   }
 
