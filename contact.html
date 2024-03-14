@@ -12,8 +12,8 @@
     <title>Contact</title>
 </head>
 <body>
-    <header class="grid-con flex-order" >
-        <nav id="main-nav" class="col-span-full l-col-start-4 l-col-end-11">
+    <header class="full-width-grid-con flex-order" >
+        <nav id="main-nav" class="col-start-1 col-end-2 l-col-start-4 l-col-end-11">
             <h2 class="hidden">Main Navigation</h2>
             <button id="button"></button>
             <div id="burger-con">
@@ -26,44 +26,53 @@
                 </ul>
             </div>
         </nav>
-        <div id="logo" class="col-span-full l-col-start-1 l-col-end-4">
-            <img src="images/quatro-logo.svg" alt="Couples Resort Logo">
+        <div class="qlogo">
+        <object class="logo" data="images/quatro-logo.svg" type="image/svg+xml"></object>
         </div>
     </header>
 
 <main>
-    <h1>Contact Us</h1>
-<form>
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name">
-
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name">
-
-            <label for="email">EMAIL</label>
-            <input type="email" id="email">
-
-            <label for="comments">COMMENTS</label>
-            <textarea id="comments"></textarea>
-
-            <input type="submit" value="Send">
-
-</form>
+    <div class="grid-con">
+    <h1 class="col-start-1 col-end-3">Contact Us</h1>
+    </div>
+    <form action="submit">
+        <ul class="contact-form grid-con">
+            <li class="col-span-full input-small">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name">
+            </li>
+            <li class="col-span-full input-small">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name">
+            </li>
+            <li class="col-span-full">
+                <label for="email">e-mail</label>
+                <input type="email" id="email" class=" input-medium">
+            </li>
+            <li class="col-span-full">
+                <label for="message">Message</label>
+                <textarea class= "input-large" id="message"></textarea>
+            </li>
+            <li class="send col-start-4 m-col-start-1">
+                <input class="submit" type="submit" value="Send">
+            </li>
+        </ul>
+    </form>
 </main>
 
 
 <footer>
-    <ul>
-        <li><a href="#">PRODUCT</a></li>
-        <li><a href="#">RECYCLING</a></li>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="#">FIND US</a></li>
-        <li><a href="#">STORIES</a></li>
+    <ul class="grid-con footer-nav">
+        <li class="col-start-1 col-end-2"><a href="#">PRODUCT</a></li>
+        <li class="rec col-start-2 col-end-4"><a href="#">RECYCLING</a></li>
+        <li class="contact-footer col-start-4 col-end-5"><a href="#">CONTACT</a></li>
+        <li class="find-us col-start-1 col-end-3"><a href="#">FIND US</a></li>
+        <li class="stories col-start-3 col-end-4"><a href="#">STORIES</a></li>
     </ul>
-    <ul>
-        <li><a href="#"><img src="images/X-logo-black.png" alt="X Logo"></a></li>
-        <li><a href="#"><img src="images/Instagram_black.svg" alt="Instagram Logo"></a></li>
-        <li><a href="#"><img src="images/tiktok-logo-black.svg" alt="Tiktok Logo"></a></li>
+    <ul class="grid-con social-nav">
+        <li class="social-icon"><a href="#"><img src="images/X-logo-black.png" alt="X Logo"></a></li>
+        <li class="social-icon"><a href="#"><img src="images/Instagram_black.svg" alt="Instagram Logo"></a></li>
+        <li class="social-icon"><a href="#"><img src="images/tiktok-logo-black.svg" alt="Tiktok Logo"></a></li>
     </ul>
 </footer>
 <script src="js/main.js"></script>

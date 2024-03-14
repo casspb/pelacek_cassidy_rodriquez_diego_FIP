@@ -1,38 +1,182 @@
+body {
+    background: url(../images/fruit-background2.jpg);
+
+}
+
 .mobile-hide{
     display: none;
 }
 
-.company-images div{
-    height: 370px;
+header {
+    background-color: #F2F240;
+    height: 108px;
 }
 
-.product-section{
-    height: 424px;
+.qlogo {
+    width: 166.35px;
+    height: 90.64px;
+    justify-self: center;
+    margin-right: 23px;
 }
 
-.hero-image{
-    height: 247px;
-}
+/* 2. ---Main Nav--- */
 
-.main-text{
-    height: 240px;
-}
-
-footer div{
-    height: 245px;
-}
+#main-nav button {
+    width: 36px;
+    height: 30px;
+    background: url(../images/burger.svg) no-repeat center;
+    margin-top: 37px;
+    margin-left: 23px;
+    transition: all .5s ease;
+    border: 0;
+ }
  
-.flex-order{
-    flex-wrap: wrap;
-  }
+ #main-nav button.expanded {
+    transform: rotate(90deg);
+ }
+ 
+ #burger-con {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+ }
+ 
+ #burger-con.slide-toggle {
+    display: block;
+ }
+ 
+ #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ #main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+ }
+ 
+ #main-nav ul li a:hover {
+    color: #9a2018;
+ }
+ 
+ #main-nav ul li {
+    border-bottom: 1px solid #efefef;
+ }
+ 
+ #main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+ }
+ 
+ #main-nav ul li:last-child {
+    margin-bottom: 10px;
+ }
 
- .nav {
-    order: 1; /* Initially second in the source order */
-  }
-  
-  .logo {
-    order: 2; /* Initially first in the source order */
-  }
+ /* Footer */
+ footer {
+    background-color: #F2F240;
+    margin-top: 95px;
+ }
+
+ .social-icon {
+    width: 37.16px;
+ }
+
+.footer-nav {
+
+}
+
+.footer-nav li {
+    display: inline;
+
+    
+}
+
+.rec {
+    margin-left: 35px;
+}
+
+.contact-footer {
+    justify-self: center;
+}
+
+.find-us {
+    padding-left: 40%;
+}
+
+.stories {
+    
+}
+
+ .footer-nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+
+ }
+
+ .social-nav {
+    margin-left: 23%;
+ }
+
+ .stories {
+    margin-left: 25%;
+ }
+
+  /* Contact */
+
+form {
+
+}
+   
+label {
+    display: block;
+}
+
+  h1 {
+    text-align: left;
+    margin-top: 40px;
+ }
+
+ .input-medium, .input-large {
+    width: 100%;
+ }
+
+ .input-large {
+    height: 110.27px;
+ }
+
+ul li{
+    list-style-type: none;
+    text-align: left;
+    margin-top: 28px;
+    
+ }
+
+label {
+    width: 100%;
+}
+
+ input, textarea {
+    width: 65%;
+    height: 44px;
+ }
+
+ textarea {
+    height: 343px;
+ }
+ 
+ input[type=submit] {
+    margin-top: 29px;
+    height: 44px;
+
+ }
+
+ .send {
+    margin-top: 0px;
+ }
 
 
  /* ---tablet Sized Screens--- */
