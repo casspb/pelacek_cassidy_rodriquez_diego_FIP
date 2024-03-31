@@ -6,70 +6,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/58e6ec7ea8.js" crossorigin="anonymous"></script>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
-    <header class="full-width-grid-con flex-order" >
-        <nav id="main-nav" class="col-start-1 col-end-2 l-col-start-4 l-col-end-11">
-            <h2 class="hidden">Main Navigation</h2>
-            <button id="button"></button>
-            <div id="burger-con">
-                <ul>
-                    <li><a href="#">PRODUCTS</a></li>
-                    <li><a href="#">FIND US</a></li>
-                    <li><a href="#">STORIES</a></li>
-                    <li><a href="#">RECYCLING</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
+    <header>
+        <nav class="header-nav grid-con">
+            <input type="checkbox" id="nav-btn">
+            <label class="bars col-start-1 col-end-2" for="nav-btn" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="logo-tablet m-col-start-1 col-end-4">
+                <img src="images/quatro-logo.svg" alt="logo">
+            </div>
+            <ul class="top-nav m-col-start-4 m-col-end-13">
+                <li id="products" class=""><a href="products.html">Products</a></li>
+                <li id="findus" class=""><a href="find-us.html">Find Us</a></li>
+                <li id="stores" class=""><a href="stores.html">Stores</a></li>
+                <li id="recycling"><a href="recycling.html">Recycling</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="logo col-span-full">
+                <img src="images/quatro-logo.svg" alt="logo">
             </div>
         </nav>
-        <div class="qlogo">
-        <object class="logo" data="images/quatro-logo.svg" type="image/svg+xml"></object>
-        </div>
+        
     </header>
 
 <main>
-    <div class="grid-con">
-    <h1 class="col-start-1 col-end-3">Contact Us</h1>
+
+    <div class="medium-banner">
+        
+    </div>
+
+    <div class="Contact-page grid-con">
+    <h1 class="col-span-full">CONTACT US</h1>
     </div>
     <form action="submit">
         <ul class="contact-form grid-con">
-            <li class="col-span-full input-small">
-                <label for="first-name">First Name</label>
+            <li class="col-span-full m-col-start-3 m-col-end-6 input-small">
+                <label for="first-name">FIRST NAME</label>
                 <input type="text" id="first-name">
             </li>
-            <li class="col-span-full input-small">
-                <label for="last-name">Last Name</label>
+            <li class="col-span-full input-small m-col-start-8 m-col-end-11">
+                <label for="last-name">LAST NAME </label>
                 <input type="text" id="last-name">
             </li>
-            <li class="col-span-full">
-                <label for="email">e-mail</label>
+            <li class="col-span-full m-col-start-3 m-col-end-11">
+                <label for="email">EMAIL</label>
                 <input type="email" id="email" class=" input-medium">
             </li>
-            <li class="col-span-full">
-                <label for="message">Message</label>
-                <textarea class= "input-large" id="message"></textarea>
+            <li class="col-span-full m-col-start-3 m-col-end-11">
+                <label for="message">MESSAGE</label>
+                <textarea class= "input-large " id="message"></textarea>
             </li>
-            <li class="send col-end-5">
-                <input class="submit" type="submit" value="Send">
+            <li class="send col-start-1 col-end-3  m-col-start-3 m-col-end-5">
+                <input class="submit" type="submit" value="SUBMIT">
             </li>
         </ul>
     </form>
 </main>
 
 
-<footer>
-    <ul class="grid-con footer-nav">
-        <li class="col-start-1 col-end-2"><a href="#">PRODUCT</a></li>
-        <li class="rec col-start-2 col-end-4"><a href="#">RECYCLING</a></li>
-        <li class="contact-footer col-end-5"><a href="#">CONTACT</a></li>
-        <li class="find-us col-start-1 col-end-3"><a href="#">FIND US</a></li>
-        <li class="stories col-start-3 col-end-4"><a href="#">STORIES</a></li>
+<footer class="grid-con">
+    <ul class="footer-nav footer-1 col-span-full">
+        <li class=""><a href="#">PRODUCT</a></li>
+        <li class=""><a href="#">RECYCLING</a></li>
+        <li class=""><a href="#">CONTACT</a></li>
     </ul>
-    <ul class="grid-con social-nav">
+    <ul  class="footer-nav col-span-full">
+        <li><a href="#">FIND US</a></li>
+        <li><a href="#">STORIES</a></li>
+    </ul>
+    <ul class="col-span-full social-nav">
         <li class="social-icon"><a href="#"><img src="images/X-logo-black.png" alt="X Logo"></a></li>
         <li class="social-icon"><a href="#"><img src="images/Instagram_black.svg" alt="Instagram Logo"></a></li>
         <li class="social-icon"><a href="#"><img src="images/tiktok-logo-black.svg" alt="Tiktok Logo"></a></li>
