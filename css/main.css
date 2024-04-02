@@ -147,7 +147,12 @@ input, textarea {
 }
 
  /* Footer */
- footer {
+
+.tablet-footer {
+   display: none;
+}
+
+ .footer-container {
     background-color: #F2F240;
  }
 
@@ -158,6 +163,11 @@ input, textarea {
 /* .foooter-1 {
    margin-top: 0.5625su;
 } */
+
+footer {
+   width: 100%;
+   background-color: #F2F240;
+}
 
  .footer-nav li {
    width: 100%;
@@ -308,6 +318,76 @@ ul li {
    margin-left: 0px;
 }
 
+.contact-form {
+   height: 638px;
+}
+
+.medium-banner {
+   height: 404px;
+}
+
+input {
+   border-radius: 11px;
+}
+
+
+/* footer */
+
+.footer-nav {
+   border-left: #C0338D solid 3px;
+   padding-left: 2.025em;
+   height: 10.0625em;
+}
+
+.find-us {
+   height: 71px;
+   width: 203px;
+   background-color: #C0338D;
+   font-size: 2em;
+   color: white;
+   margin-top: 57px;
+}
+
+.tablet-footer {
+   display: block;
+}
+
+.mobile-footer {
+   margin-top: 0;
+   display: none;
+}
+
+.footer-nav a {
+   font-size: 1.25em;
+   margin-bottom: 0.5em;
+   display: block;
+}
+
+.social-nav li{
+   display: block;
+}
+
+.mobile-footer ul li a{
+   display: block;
+}
+
+.social-nav {
+   margin-top: 0;
+}
+
+
+.social-icon {
+   margin-top: 1.53125em;
+   margin-bottom: 15px;
+}
+
+.social-icon li {
+   width: 40px;
+   margin-bottom: 20.5px;
+   height: 40px;
+   margin-top: 0px;
+}
+
  }
 
 
@@ -329,7 +409,7 @@ ul li {
   .company-images div{
     height: 370px;
 }
-footer div{
+.footer-container div{
     height: 210px;
 }
 
@@ -341,8 +421,74 @@ footer div{
 
 /* Contact */ 
 
+.contact-form {
+   height: 638px;
+}
+
 .medium-banner {
    height: 404px;
+}
+
+input {
+   border-radius: 11px;
+}
+
+
+/* footer */
+
+.footer-nav {
+   border-left: #C0338D solid 3px;
+   padding-left: 2.025em;
+   height: 10.0625em;
+}
+
+.find-us {
+   height: 97px;
+   width: 280px;
+   background-color: #C0338D;
+   font-size: 3em;
+   color: white;
+   margin-top: 57px;
+}
+
+.tablet-footer {
+   display: block;
+}
+
+.mobile-footer {
+   margin-top: 0;
+   display: none;
+}
+
+.footer-nav a {
+   font-size: 1.25em;
+   margin-bottom: 0.5em;
+   display: block;
+}
+
+.social-nav li{
+   display: block;
+}
+
+.mobile-footer ul li a{
+   display: block;
+}
+
+.social-nav {
+   margin-top: 0;
+}
+
+
+.social-icon {
+   margin-top: 1.53125em;
+   margin-bottom: 15px;
+}
+
+.social-icon li {
+   width: 40px;
+   margin-bottom: 20.5px;
+   height: 40px;
+   margin-top: 0px;
 }
 
  }
