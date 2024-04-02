@@ -124,6 +124,14 @@ a {
 
 /* contact */
 
+.contact-form {
+   background-color: #BCC632;
+   width: 100%;
+   margin-bottom: 2.56em;
+   border-radius: 30px;
+   margin-top: 2.18em;
+}
+
 input, textarea {
    border: solid grey 1px;
    border-radius: 18px;
@@ -188,10 +196,9 @@ label {
 
   h1 {
     text-align: left;
-    margin-top: 40px;
  }
 
- .input-medium, .input-large {
+ input {
     width: 100%;
  }
 
@@ -199,13 +206,14 @@ ul li{
     list-style-type: none;
     text-align: left;
     margin-top: 28px;
+    margin-left: 5px;
     
  }
 
 
 
  input, textarea {
-    width: 65%;
+   width: 98%;
     height: 44px;
  }
 
@@ -274,10 +282,13 @@ ul li{
    width: 100%;
 }
 
-   input {
-      width: 100%;
+   input  {
       height: 32px;
    }
+
+   input, textarea {
+      width: 100%;
+    }
 
  h1 {
       text-align: center;
@@ -292,6 +303,11 @@ ul li{
 .input-large {
    height: 85.68px;
 }
+
+ul li {
+   margin-left: 0px;
+}
+
  }
 
 
@@ -316,8 +332,17 @@ ul li{
 footer div{
     height: 210px;
 }
- }
+
 
  .subscribe{
     height: 144px;
 }
+
+
+/* Contact */ 
+
+.medium-banner {
+   height: 404px;
+}
+
+ }
