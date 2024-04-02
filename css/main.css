@@ -197,6 +197,47 @@ footer {
    padding: 0;
  }
 
+ /* Stories */
+
+ 
+.banner {
+   height: 232px;
+   background-color: grey;
+}
+
+.local-stories {
+   background-color: #C0338D;
+   border-radius: 32px;
+}
+
+.local-stories div {
+   background-color: grey;
+   height: 294px;
+   margin: 31px;
+
+}
+
+ article {
+   border-radius: 13px;
+   margin: 31px;
+   background-color: white;
+ }
+
+ h3 {
+   padding-left: 20px;
+ }
+
+ article p {
+   font-size: 1em;
+   padding: 26px 20px 26px 20px;
+ }
+
+ .article-2 {
+   background-color: #BCC632;
+   margin-top: 1.3125em;
+   margin-bottom: 3.3125em;
+ }
+
   /* Contact */
 
 
@@ -280,6 +321,38 @@ ul li{
   .top-nav li {
    display: inline;
   }
+
+  /* Stories */
+  
+  .local-stories {
+   display:flex;
+  }
+
+   .local-stories div {
+      width: 239px;
+   }
+
+   article {
+      width: 60%;
+   }
+
+   .footer-sub {
+      background-color: #F59623;
+   }
+
+   .footer-sub input {
+      height: 40px;
+      margin: 26px 0;
+      border-radius: 24px;
+   }
+
+   .subscribe {
+      position: relative;
+      width: 179px;
+      right: 120px;
+      background-color: #C0338D;
+      color: white;
+   }
 
    /* contact */
 
@@ -414,11 +487,6 @@ input {
 }
 
 
- .subscribe{
-    height: 144px;
-}
-
-
 /* Contact */ 
 
 .contact-form {
@@ -492,3 +560,4 @@ input {
 }
 
  }
+
