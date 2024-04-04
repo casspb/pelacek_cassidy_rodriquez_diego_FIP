@@ -6,52 +6,104 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/58e6ec7ea8.js" crossorigin="anonymous"></script>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <title> quatro Responsive Scaffold</title>
+    <title>Contact</title>
 </head>
 <body>
-    <header class="grid-con flex-order" >
-        <h1 class="hidden">Quatro website</h1>
-        <div class="box col-start-1 m-col-start-4 m-col-span-full nav "> Nav</div>
-        <div class="box col-start-2 col-span-3 m-col-start-1 m-col-span-3 logo">logo</div>
+    <header>
+        <nav class="header-nav grid-con">
+            <input type="checkbox" id="nav-btn">
+            <label class="bars col-start-1 col-end-2" for="nav-btn" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="logo-tablet m-col-start-1 col-end-4">
+                <img src="images/quatro-logo.svg" alt="logo">
+            </div>
+            <ul class="top-nav m-col-start-4 m-col-end-13">
+                <li id="products" class=""><a href="products.html">Products</a></li>
+                <li id="findus" class=""><a href="find-us.html">Find Us</a></li>
+                <li id="stores" class=""><a href="stores.html">Stories</a></li>
+                <li id="recycling"><a href="recycling.html">Recycling</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="logo col-span-full">
+                <img src="images/quatro-logo.svg" alt="logo">
+            </div>
+        </nav>
+        
     </header>
 
-<main>
-    <section class="hero-image grid-con">
-        <h2 class="hidden">Welcome Image</h2>
-        <div class="box col-span-full"> Hero Image</div>
-    </section>
+<main class="index-page">
 
-    <section class="main-content ">
-        <h2 class="hidden"> main content</h2>
-        <article class=" grid-con">
-            <h2 class="hidden"> product section and company information</h2>
-        <div class="box col-span-full m-col-start-1 m-col-span-6 product-section"> Product card</div>
-        <div class="box col-span-full m-col-start-7 main-text"> Text</div>
-         </article>
+    <div class="banner">
 
-         <article class="company-images grid-con">
-            <h2 class="hidden"> company images</h2>
-            <div class="box col-span-full m-col-start-1 m-col-span-4"> image 1</div>
-            <div class="box col-span-full m-col-start-5 m-col-span-4"> image 2</div>
-            <div class="box col-span-full m-col-start-9 m-col-span-4"> image 3</div>
-         </article>
-    </section>
-    
-    <section class="subscribe grid-con mobile-hide">
-        <h2 class="hidden"> subscribe to news letters</h2>
-        <div class="box col-span-full "> subscribe</div>
-    </section>
- 
+    </div>
+    <div class="index-grid grid-con">
+        <div class="product-card grid-con m-col-start-2 m-col-end-7">
+            <div class="background col-span-full"></div>
+            <img class="bottle col-start-1 col-end-3" src="images/quatro-bottle-mobile.png" alt="Quatro Bottle">
+            <article class="index-product col-start-3 col-end-5">
+            <h2>ORIGINAL</h2>
+            <p>Best Mix Of Flavours. All Natural, Passionfruit, Orange, Grapefruit, And Pineapple.</p>
+            </article>
+
+            <input class="col-start-2 col-end-4 find-me-btn" type="button" value="FIND ME">
+        </div>
+
+        <div class="index-2 grid-con m-col-start-7 m-col-end-13">
+
+            <h2 class="col-span-full">SIMPLE FLAVOUR.<br>FRESH INGREDIENTS.</h2>
+
+            <div class="fact-box col-span-full">
+                <p><i class="fa-solid fa-leaf" style="color: #c0338d;"></i>Organic Deliciousness</p>
+                <p><i class="fa-solid fa-recycle" style="color: #bcc632;"></i>RECYCLING PROGRAM</p>
+                <p><i class="fa-solid fa-square-check" style="color: #f59623;"></i>VERIFIED FRUITNESS </p>
+            </div>
+        </div>
+
+        <div class="gallary grid-con">
+            <img class="col-span-full passionfruit" src="images/passionfruit-mobile.jpg" alt="Passionfruit">
+        </div>
+
+    </div>  
+
+
+
+
 </main>
 
-
 <footer>
-    <div class="grid-con">
-        <div class="box product col-span-full">footer</div>
+
+    <div class="footer-sub tablet-footer">
+            <div class="grid-con">
+                <input class="m-col-start-2 m-col-end-11" type="email">
+                <input class="m-col-end-12 subscribe" type="button" value="SUBSCRIB">
         </div>
+    </div>
+
+    <div class="grid-con footer-container">
+    <input class="tablet-footer l-col-start-1 l-col-end-3 find-us" type="button" value="FIND US">
+
+    <ul class="footer-nav footer-1 col-span-full m-col-start-8 m-col-end-10">
+        <li class=""><a href="#">PRODUCT</a></li>
+        <li class=""><a href="#">RECYCLING</a></li>
+        <li class=""><a href="#">CONTACT</a></li>
+        <li><a class="tablet-footer" href="#">FIND US</a></li>
+        <li><a class="tablet-footer" href="#">STORIES</a></li>
+    </ul>
+    <ul  class="footer-nav mobile-footer col-span-full m-col-start-8 m-col-end-9">
+        <li><a href="#">FIND US</a></li>
+        <li><a href="#">STORIES</a></li>
+    </ul>
+    <ul class="col-span-full social-nav m-col-start-11 m-col-end-12">
+        <li class="social-icon"><a href="#"><img src="images/X-logo-black.png" alt="X Logo"></a></li>
+        <li class="social-icon"><a href="#"><img src="images/Instagram_black.svg" alt="Instagram Logo"></a></li>
+        <li class="social-icon"><a href="#"><img src="images/tiktok-logo-black.svg" alt="Tiktok Logo"></a></li>
+    </ul>
+    </div>
 </footer>
 <script src="js/main.js"></script>
 </body>
