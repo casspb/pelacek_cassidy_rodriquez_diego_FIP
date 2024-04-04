@@ -28,6 +28,10 @@ header img {
    padding: 0;
 }
 
+h1 {
+   font-size: 2.125em;
+}
+
 h3 {
    font-size: 1.125em;
 }
@@ -205,6 +209,10 @@ footer {
    background-color: grey;
 }
 
+.stories-header {
+   text-align: center;
+}
+
 .local-stories {
    background-color: #C0338D;
    border-radius: 32px;
@@ -286,6 +294,12 @@ ul li{
  /* ---tablet Sized Screens--- */
  @media screen and (min-width: 768px) {
   
+   h1 {
+      font-size: 3em;
+   }
+
+
+
   /* header */
 
    .logo {
@@ -324,6 +338,11 @@ ul li{
 
   /* Stories */
   
+  .stories-header {
+   margin-top: 1.875em;
+   margin-bottom: 1.875em;
+  }
+
   .local-stories {
    display:flex;
   }
@@ -467,6 +486,11 @@ input {
  
  /* ---desktop Sized Screens--- */
  @media screen and (min-width: 1200px) { 
+
+   h1 {
+      font-size: 4em;
+   }
+
   .mobile-hide{
     display: grid;
   }
@@ -484,6 +508,14 @@ input {
 }
 .footer-container div{
     height: 210px;
+}
+
+/* Stories */ 
+
+
+
+.local-stories div {
+   width: 373px;
 }
 
 
