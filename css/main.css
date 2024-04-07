@@ -109,6 +109,7 @@ header {
    height: 944px;
    z-index: 500;
    margin-top: 108px;
+   text-transform: uppercase;
 }
 
 .top-nav li {
@@ -129,71 +130,83 @@ a {
 
 
 /* Index */
+.banner{
+text-align: center;
+}
 
-.index-grid {
-   display: unset;
+.product_card{
+   background-image: url(../images/product_card_dot.svg);
+   background-repeat: no-repeat;
+   width: 499px;
+   height: 602px;
+   margin-left: 2em;
+   margin-top: 7em;
+}
+.product_card img{
+   padding-left: 3em;
+   padding-top: 6em;
+   height: 451px;
+}
+
+.product_card h2{
+ text-align: center;
+ margin-top: -10em;
+ font-size: 38px;
+ margin-left: 1em;
+}
+
+.product_card p{
+   height: 290px;
+   width: 206px;
+   margin-left: 9em;
+   font-size: 26px;
+   margin-top: 2em;
+}
+
+.find-me-btn {
+   width: 283px;
+   height: 78px;
+   border-radius: 41px;
+   font-size: 38px;
+   background-color: #C0338D;
+   color: white;
+   margin-top: -3.5em;
+   margin-left: 1em;
+}
+
+.index_facts{
+   margin-top: -40em;
+
+}
+
+.index_facts h2{
+   text-align: center;
+   color: #FCF7EF;
+   font-size: 50px;
+}
+
+.fact-box{
+   width: 485px;
+   height: 425px;
+   border-radius: 40px;
+}
+
+.fact-box img{
+   width: 97px;
+   margin: 10px;
+}
+
+.fact-box p{
+   font-size: 2em;
+   text-transform: uppercase;
+   margin-left: 100px;
+   margin-top: -110px;
 }
 
 .index-page {
    background-color: #BCC632;
 }
 
-.product-card {
-   padding-top: 3.675em;
-   background-color:#F59623;
-   border-radius:110px 180px 90px 180px ;
-   padding-bottom: 3.675em;
-   margin: 12px 12px 12px 12px;
-}
-
-
-.bottle {
-   margin-left: 30%;
-}
-
-.index-product {
-   position: relative;
-   margin: 0 auto;
-   right: 10%;
-   background: none;
-}
-
-.index-product h2 {
-   position: relative;
-   right: 10%;
-}
-
-.index-product p {
-   padding-top: 40px;
-}
-
-.find-me-btn {
-   margin-top: 20px;
-   background-color: #C0338D;
-   color: white;
-}
-
-.index-2 {
-   text-align: center;
-}
-
-.index-2 h2 {
-   color: #ffffff;
-}
-
-.fact-box {
-   background: white;
-   border-radius: 50px;
-}
-
-.fact-box p {
-   font-size: 1.375em;
-   margin-top: 1em;
-}
-
-.fact-box p:last-child {
-   margin-bottom: 1em;
-}
 
 .passionfruit {
    margin-top: 3.0125em;
@@ -287,10 +300,6 @@ footer {
  /* Stories */
 
  
-.banner {
-   height: 232px;
-   background-color: grey;
-}
 
 .stories-header {
    text-align: center;
@@ -306,6 +315,11 @@ footer {
    height: 294px;
    margin: 31px;
 
+}
+
+.local-stories span{
+   text-decoration: underline;
+   cursor: pointer;   
 }
 
  article {
@@ -435,11 +449,6 @@ ul li{
    height: 1.75em;
    margin-top: 25px;
 }
-
-.fact-box {
-   height: 287.9px;
-}
-
 
 
   /* Stories */
