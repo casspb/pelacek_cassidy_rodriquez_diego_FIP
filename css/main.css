@@ -1,5 +1,5 @@
 body {
-   font-family: "Comfortaa", sans-serif;
+   font-family: open-sans, poppins, sans-serif;
    font-optical-sizing: auto;
    font-style: normal;
    margin: 0px;
@@ -29,18 +29,30 @@ header img {
 
 h1 {
    font-size: 2.125em;
+   font-family: open-sans, sans-serif;
+font-weight: 800;
+font-style: normal;
 }
 
 h2 {
    font-size: 1.75em;
+   font-family: open-sans, sans-serif;
+font-weight: 700;
+font-style: normal;
 }
 
 h3 {
-   font-size: 1.125em;
+   font-size: 1.25em;
+   font-family: open-sans, sans-serif;
+font-weight: 700;
+font-style: normal;
 }
 
-h4 {
-   font-size: 1.875em;
+p {
+   font-size: 1em;
+   font-family: poppins, sans-serif;
+font-weight: 600;
+font-style: normal;
 }
 
 .logo-tablet {
@@ -98,6 +110,9 @@ header {
 }
 
 .top-nav {
+   font-family: open-sans, sans-serif;
+font-weight: 700;
+font-style: normal;
    margin-top: auto;
    display: block;
    left: 120%;
@@ -141,7 +156,13 @@ text-align: center;
    height: 602px;
    margin-left: 2em;
    margin-top: 7em;
+   transition: transform 0.5s ease;
 }
+
+.product_card:hover {
+    transform: rotate(360deg); 
+}
+
 .product_card img{
    padding-left: 3em;
    padding-top: 6em;
@@ -149,6 +170,7 @@ text-align: center;
 }
 
 .product_card h2{
+   color: #FCF7EF;
  text-align: center;
  margin-top: -10em;
  font-size: 38px;
@@ -156,6 +178,8 @@ text-align: center;
 }
 
 .product_card p{
+   font-family: poppins, sans-serif;
+font-style: normal;
    height: 290px;
    width: 206px;
    margin-left: 9em;
@@ -170,12 +194,13 @@ text-align: center;
    font-size: 38px;
    background-color: #C0338D;
    color: white;
-   margin-top: -3.5em;
-   margin-left: 1em;
+   margin-top: 0.125em;
+   margin-left: 3em;
+   cursor: pointer;
 }
 
 .index_facts{
-   margin-top: -40em;
+   margin-top: 2em;
 
 }
 
@@ -187,7 +212,7 @@ text-align: center;
 
 .fact-box{
    width: 485px;
-   height: 425px;
+   height: 455px;
    border-radius: 40px;
 }
 
@@ -197,6 +222,9 @@ text-align: center;
 }
 
 .fact-box p{
+   font-family: open-sans, sans-serif;
+font-weight: 700;
+font-style: normal;
    font-size: 2em;
    text-transform: uppercase;
    margin-left: 100px;
@@ -296,7 +324,10 @@ footer {
 }
 
  .footer-nav {
-
+   font-size: 1em;
+   font-family: open-sans, sans-serif;
+font-weight: 700;
+font-style: normal;
    margin: 0 auto;
    margin-top: 20px;
    padding: 0;
@@ -465,6 +496,7 @@ ul li{
    }
 
    .footer-sub input {
+      font-size: 1.5em;
       margin-top: 3em;
       height: 64px;
       border-radius: 28px;
@@ -476,6 +508,7 @@ ul li{
       right: 120px;
       background-color: #C0338D;
       color: white;
+      cursor: pointer;
    }
 
    /* Popup Modal Styles */
@@ -504,9 +537,13 @@ ul li{
    color: #FCF7EF;
    font-size: 48px;
    text-align: center;
+
  }
 
- .modal-content span{
+ .modal-content h2{
+   text-align: center;
+   margin-top: 1em;
+   margin-bottom: 1em;
    text-transform: uppercase;
    font-size: 40px;
    color: #000000;
