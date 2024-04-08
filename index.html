@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <script src="https://kit.fontawesome.com/58e6ec7ea8.js" crossorigin="anonymous"></script>
     <link href="css/grid.css" rel="stylesheet">
-   * <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
@@ -81,8 +81,16 @@
 
     <div class="footer-sub tablet-footer">
             <div class="grid-con">
-                <input class="m-col-start-2 m-col-end-11" type="email">
-                <input class="m-col-end-12 subscribe" type="button" value="SUBSCRIBE">
+                <input class="m-col-start-2 m-col-end-11" type="email" placeholder="signup-for-newletters@gmail.com">
+                <input class="m-col-end-12 subscribe" type="button" value="SUBSCRIBE" onclick="subscribeClicked()">
+                <div class="modal" id="popupModal" style="display: none;">
+
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <p><span>Thank you for subscribing!</span><br>
+                       We Promise To Only Bring You Good News, And Good Juice.</p>
+                    </div>
+                </div>
         </div>
     </div>
 
@@ -109,5 +117,23 @@
     </div>
 </footer>
 <script src="js/main.js"></script>
+<script>
+    // Function to open the modal
+    function openModal() {
+        var modal = document.getElementById("popupModal");
+        modal.style.display = "block";
+    }
+
+    // Function to close the modal
+    function closeModal() {
+        var modal = document.getElementById("popupModal");
+        modal.style.display = "none";
+    }
+
+    // Function to handle subscription button click
+    function subscribeClicked() {
+        openModal();
+    }
+</script>
 </body>
 </html>
