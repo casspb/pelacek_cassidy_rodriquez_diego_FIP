@@ -144,6 +144,7 @@ a {
 }
 
 
+
 /* Index */
 .banner{
 text-align: center;
@@ -331,6 +332,10 @@ font-style: normal;
    margin: 0 auto;
    margin-top: 20px;
    padding: 0;
+ }
+
+ .quatro_footer_4  {
+   display: none;
  }
 
  /* Stories */
@@ -678,6 +683,10 @@ input {
    margin-top: 1em;
    margin-left: 1em;
 }
+
+.quatro_footer_4  {
+   display:unset;
+ }
 
  }
 
