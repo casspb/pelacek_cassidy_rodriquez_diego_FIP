@@ -148,22 +148,19 @@ a {
    color: black;
 
 }
-
-
-
-/* Index */
-.banner{
-text-align: center;
+/* index */
+.index-page {
+   background-color: #BCC632;
 }
 
 .product_card{
+   margin-top: 2em;
+   margin-left: 2em;
    background-image: url(../images/product_card_dot.svg);
    background-repeat: no-repeat;
-   width: 499px;
-   height: 602px;
-   margin-left: 2em;
-   margin-top: 7em;
    transition: transform 0.5s ease;
+   width: 368px;
+   height: 444px;
 }
 
 .product_card:hover {
@@ -171,93 +168,117 @@ text-align: center;
 }
 
 .product_card img{
-   padding-left: 3em;
-   padding-top: 6em;
-   height: 451px;
+   height: 200px;
+  margin-left: 2em;
+ margin-top: 4em;
 }
 
 .product_card h2{
    color: #FCF7EF;
  text-align: center;
- margin-top: -10em;
- font-size: 38px;
  margin-left: 1em;
+ margin-top: -8em;
 }
 
 .product_card p{
    font-family: poppins, sans-serif;
 font-style: normal;
-   height: 290px;
-   width: 206px;
-   margin-left: 9em;
-   font-size: 26px;
-   margin-top: 2em;
+margin-left: 9em;
+width: 165px;
+padding-top: 1em;
+
 }
 
 .find-me-btn {
-   width: 283px;
-   height: 78px;
-   border-radius: 41px;
-   font-size: 38px;
+   width: 208px;
+   height: 57px;
+   border-radius: 31px;
+   font-size: 27px;
    background-color: #C0338D;
    color: white;
-   margin-top: 0.125em;
-   margin-left: 3em;
    cursor: pointer;
+  margin-left: 3em;
+  margin-top: 1.5em;
 }
 
 .index_facts{
    margin-top: 2em;
-
 }
 
 .index_facts h2{
    text-align: center;
    color: #FCF7EF;
-   font-size: 50px;
+   font-size: 1.75em;
 }
 
 .fact-box{
-   width: 485px;
-   height: 455px;
+   width: 400px;
+   height: 200px;
    border-radius: 40px;
 }
 
 .fact-box img{
-   width: 97px;
-   margin: 10px;
+   width: 40px;
+   margin-left: .5em;
+   margin-bottom: -1em;
+padding-top: 0.5em;
 }
 
 .fact-box p{
    font-family: open-sans, sans-serif;
-font-weight: 700;
-font-style: normal;
-   font-size: 2em;
+   font-weight: 700;
+   font-style: normal;
+   font-size: 1.375em;
    text-transform: uppercase;
-   margin-left: 100px;
-   margin-top: -110px;
+   margin-left: 3em;
+   padding: 0;
+   margin-top: -0.5em;
 }
 
-.index-page {
-   background-color: #BCC632;
+.gallery-carousel {
+   text-align: center;
+   overflow: hidden;
+   position: relative;
+   width: 370px;
+   margin: 0 auto;
+   border-radius: 30px;
+   margin-bottom: 30px;
 }
 
-.gallery-carousel{
-   padding: 6em 0em;
-   background-image: url(../images/product_card_dot.svg);
-   background-repeat: no-repeat;
-  background-size:448px;
-  background-position: center ;
+.gallery-carousel .slides {
+   display: flex; /* Ensure the slides are displayed in a row */
+   transition: transform 0.5s ease-in-out; /* Smooth transition between slides */
 }
 
-.gallery-carousel img{
-   border-radius: 20px;
+.gallery-carousel .slide {
+   flex: 0 0 auto; /* Ensure each slide takes up its own space */
 }
 
-.gallery-spacing{
-   margin-right: 1.5em;
+.gallery-carousel .slider-image {
+   max-width: 100%;
+   height: auto;
+   display: block; /* Ensure images don't have any inline gaps */
 }
 
+#prev-btn,
+#next-btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 20px;
+   cursor: pointer;
+   padding: 20px;
+   border: none;
+   background-color: rgba(255, 255, 255, 0.6);
+}
+
+#prev-btn {
+   left: 0px;
+}
+
+#next-btn {
+   right: 0px;
+}
 /* contact */
 
 .medium-banner {
@@ -291,6 +312,7 @@ input, textarea {
 }
 
  /* Footer */
+
 
 .tablet-footer {
    display: none;
@@ -497,6 +519,7 @@ ul li{
    margin: 0 auto;
    background-color: #F2F240;
   }
+   
   .top-nav li {
    display: inline;
    border-bottom: none;
@@ -504,6 +527,105 @@ ul li{
    padding-bottom: 0;
   }
 
+
+   /* index*/
+ }
+  .product_card{
+   background-image: url(../images/product_card_dot.svg);
+   background-repeat: no-repeat;
+   width: 334px;
+   height: 403px;
+   transition: transform 0.5s ease;
+}
+
+.product_card:hover {
+    transform: rotate(360deg); 
+}
+
+.product_card img{
+   height: 250px;
+}
+
+.product_card h2{
+   color: #FCF7EF;
+ text-align: center;
+ font-size: 25px;
+ margin-top: -11em;
+ margin-left: 2em;
+}
+
+.product_card p{
+   font-family: poppins, sans-serif;
+font-style: normal;
+   height: 194px;
+   width: 147px;
+   font-size: 16px;
+   padding-left: 1em;
+}
+
+.find-me-btn {
+   width: 189px;
+   height: 52px;
+   border-radius: 41px;
+   font-size: 25px;
+   background-color: #C0338D;
+   color: white;
+   margin-top: 2em;
+   margin-left: 3em;
+   cursor: pointer;
+}
+
+.index_facts{
+   margin-top: 2em;
+
+}
+
+.index_facts h2{
+   text-align: center;
+   color: #FCF7EF;
+   font-size: 28px;
+}
+
+.fact-box{
+   width: 331px;
+   height: 295px;
+   border-radius: 40px;
+}
+
+.fact-box img{
+   width: 64px;
+   margin: 10px;
+}
+
+.fact-box p{
+   font-family: open-sans, sans-serif;
+font-weight: 700;
+font-style: normal;
+   font-size: 1.4em;
+   text-transform: uppercase;
+   margin-left: 90px;
+   margin-top: -60px;
+  
+}
+
+
+
+.gallery-carousel{
+   overflow: unset;
+   padding: 6em 0em;
+   background-image: url(../images/product_card_dot.svg);
+   background-repeat: no-repeat;
+  background-size:448px;
+  background-position: center ;
+}
+
+.gallery-carousel img{
+   border-radius: 20px;
+}
+
+.gallery-spacing{
+   margin-right: 2em;
+}
 
 
   /* Stories */
@@ -575,7 +697,7 @@ ul li{
  .modal-content p{
    padding: 0.5em;
    color: #FCF7EF;
-   font-size: 48px;
+   font-size: 42px;
    text-align: center;
 
  }
@@ -583,7 +705,6 @@ ul li{
  .modal-content h2{
    text-align: center;
    margin-top: 1em;
-   margin-bottom: 1em;
    text-transform: uppercase;
    font-size: 40px;
    color: #000000;
@@ -602,6 +723,7 @@ ul li{
    text-decoration: none;
    cursor: pointer;
 }
+
 
 
    /* contact */
@@ -755,6 +877,139 @@ input {
 .footer-container div{
     height: 210px;
 }
+
+
+/* Index */
+.banner{
+   text-align: center;
+   }
+   
+   .product_card{
+      background-image: url(../images/product_card_dot.svg);
+      background-repeat: no-repeat;
+      width: 499px;
+      height: 602px;
+      margin-left: 2em;
+      margin-top: 7em;
+      transition: transform 0.5s ease;
+   }
+   
+   .product_card:hover {
+       transform: rotate(360deg); 
+   }
+   
+   .product_card img{
+      height: 421px;
+   }
+   
+   .product_card h2{
+      color: #FCF7EF;
+    text-align: center;
+    font-size: 38px;
+   }
+   
+   .product_card p{
+      font-family: poppins, sans-serif;
+   font-style: normal;
+      height: 290px;
+      width: 206px;
+      font-size: 22px;
+      margin-left: 11em;
+   }
+   
+   .find-me-btn {
+      width: 283px;
+      height: 78px;
+      border-radius: 41px;
+      font-size: 38px;
+      background-color: #C0338D;
+      color: white;
+      margin-top: 0.125em;
+      margin-left: 3em;
+      cursor: pointer;
+      margin-top: 1.5em;
+   }
+   
+   .index_facts{
+      margin-top: 2em;
+   
+   }
+   
+   .index_facts h2{
+      text-align: center;
+      color: #FCF7EF;
+      font-size: 50px;
+   }
+   
+   .fact-box{
+      width: 485px;
+      height: 455px;
+      border-radius: 40px;
+      margin-left: 3em;
+   }
+   
+   .fact-box img{
+      width: 97px;
+      margin: 10px;
+   }
+   
+   .fact-box p{
+      font-family: open-sans, sans-serif;
+   font-weight: 700;
+   font-style: normal;
+      font-size: 2em;
+      text-transform: uppercase;
+      margin-left: 120px;
+      margin-top: -60px;
+   }
+   
+   .index-page {
+      background-color: #BCC632;
+   }
+   
+   .gallery-carousel {
+      text-align: center;
+      overflow: unset;
+      position: relative;
+      margin-bottom: 20px; /* Add some space below the slider */
+  }
+  
+  .gallery-carousel .slides {
+      display: flex; /* Ensure the slides are displayed in a row */
+      transition: transform 0.5s ease-in-out; /* Smooth transition between slides */
+  }
+  
+  .gallery-carousel .slide {
+      flex: 0 0 auto; /* Ensure each slide takes up its own space */
+  }
+  
+  .gallery-carousel .slider-image {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensure images don't have any inline gaps */
+  }
+  
+  #prev-btn,
+  #next-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      cursor: pointer;
+      padding: 20px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.6);
+      z-index: 1; /* Ensure buttons appear above the slides */
+  }
+  
+  #prev-btn {
+      left: 0px;
+  }
+  
+  #next-btn {
+      right: 0px;
+  }
+  In this updated CSS:
 
 /* Stories */ 
 
