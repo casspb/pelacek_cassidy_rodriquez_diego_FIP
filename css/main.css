@@ -506,10 +506,19 @@ ul li{
 
    .local-stories div {
       width: 239px;
+      display: flex;
+      align-items: center;
+      margin-right: 0px;
+   }
+
+
+   .stories-img img {
+      width: 100%;
+
    }
 
    article {
-      width: 60%;
+      width: 63%;
    }
 
    .footer-sub {
