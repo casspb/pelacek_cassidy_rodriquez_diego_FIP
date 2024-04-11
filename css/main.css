@@ -345,11 +345,20 @@ font-style: normal;
 
  /* Stories */
 
- picture img {
+.stories-page {
+   background-image: url(../images/quatro-dot-background.svg);
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+
+.banner picture img {
    width: 100%;
+   max-width: 1200px;
  }
 
 .stories-header {
+   margin-top: 0.6em;
+   margin-bottom: 0.6em;
    text-align: center;
 }
 
@@ -490,10 +499,6 @@ ul li{
 
   /* Stories */
   
-  .stories-header {
-   margin-top: 1.875em;
-   margin-bottom: 1.875em;
-  }
 
   .local-stories {
    display:flex;
