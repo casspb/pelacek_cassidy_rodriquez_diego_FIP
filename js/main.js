@@ -1,20 +1,44 @@
-(function(){
-	"use strict";	
-	console.log("fired");
+(() => {
+    const slider = document.querySelector('#image-slider');
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.querySelector('#prev-btn');
+    const nextBtn = document.querySelector('#next-btn');
+    let slideWidth = slides[0].clientWidth;
+    let currentIndex = 2;
 
-	let button = document.querySelector("#button");
-	let burgerCon = document.querySelector("#burger-con");
+    function showSlide(index) {
+        const newTransformValue = -index * slideWidth + 'px';
+        slider.style.transition = 'transform 0.5s ease-in-out';
+        slider.style.transform = 'translateX(' + newTransformValue + ')';
+    }
 
-	function hamburgerMenu() {
-		burgerCon.classList.toggle("slide-toggle");
-		button.classList.toggle("expanded");
-	};
+    function nextSlide() {
+        currentIndex++;
+        if (currentIndex >= slides.length) {
+            currentIndex = 0;
+        }
+        showSlide(currentIndex);
+    }
 
-	// let hamburgerMenu = () => {
-	// 	burgerCon.classList.toggle("slide-toggle");
-	// 	button.classList.toggle("expanded");
-	// };
+    function prevSlide() {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = slides.length - 1;
+        }
+        showSlide(currentIndex);
+    }
 
-	button.addEventListener("click", hamburgerMenu, false);	
-	
+    function updateSlideWidth() {
+        slideWidth = slides[0].clientWidth;
+        showSlide(currentIndex); // Adjust the position of the current slide on resize
+    }
+
+    // Attach click event handlers to buttons using event listeners
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+
+    window.addEventListener('resize', updateSlideWidth);
+
+    // Call updateSlideWidth initially to set the correct initial slide width
+    updateSlideWidth();
 })();

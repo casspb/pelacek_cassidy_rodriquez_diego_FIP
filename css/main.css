@@ -213,7 +213,6 @@ padding-top: 1em;
    width: 400px;
    height: 200px;
    border-radius: 40px;
-   margin-left: 10px;
 }
 
 .fact-box img{
@@ -225,8 +224,8 @@ padding-top: 0.5em;
 
 .fact-box p{
    font-family: open-sans, sans-serif;
-font-weight: 700;
-font-style: normal;
+   font-weight: 700;
+   font-style: normal;
    font-size: 1.375em;
    text-transform: uppercase;
    margin-left: 3em;
@@ -234,15 +233,50 @@ font-style: normal;
    margin-top: -0.5em;
 }
 
-.gallery-carousel{
+.gallery-carousel {
    text-align: center;
+   overflow: hidden;
+   position: relative;
+   width: 370px;
+   margin: 0 auto;
+   border-radius: 30px;
+   margin-bottom: 30px;
 }
 
-.gallery-carousel img{
-   border-radius: 20px;
+.gallery-carousel .slides {
+   display: flex; /* Ensure the slides are displayed in a row */
+   transition: transform 0.5s ease-in-out; /* Smooth transition between slides */
 }
 
+.gallery-carousel .slide {
+   flex: 0 0 auto; /* Ensure each slide takes up its own space */
+}
 
+.gallery-carousel .slider-image {
+   max-width: 100%;
+   height: auto;
+   display: block; /* Ensure images don't have any inline gaps */
+}
+
+#prev-btn,
+#next-btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 20px;
+   cursor: pointer;
+   padding: 20px;
+   border: none;
+   background-color: rgba(255, 255, 255, 0.6);
+}
+
+#prev-btn {
+   left: 0px;
+}
+
+#next-btn {
+   right: 0px;
+}
 /* contact */
 
 .medium-banner {
@@ -276,6 +310,7 @@ input, textarea {
 }
 
  /* Footer */
+
 
 .tablet-footer {
    display: none;
@@ -569,6 +604,7 @@ font-style: normal;
 
 
 .gallery-carousel{
+   overflow: unset;
    padding: 6em 0em;
    background-image: url(../images/product_card_dot.svg);
    background-repeat: no-repeat;
@@ -581,7 +617,7 @@ font-style: normal;
 }
 
 .gallery-spacing{
-   margin-right: 1em;
+   margin-right: 2em;
 }
 
 
@@ -924,22 +960,49 @@ input {
       background-color: #BCC632;
    }
    
-   .gallery-carousel{
-      padding: 6em 0em;
-      background-image: url(../images/product_card_dot.svg);
-      background-repeat: no-repeat;
-     background-size:448px;
-     background-position: center ;
-   }
-   
-   .gallery-carousel img{
-      border-radius: 20px;
-   }
-   
-   .gallery-spacing{
-      margin-right: 1em;
-   }
+   .gallery-carousel {
+      text-align: center;
+      overflow: unset;
+      position: relative;
+      margin-bottom: 20px; /* Add some space below the slider */
+  }
   
+  .gallery-carousel .slides {
+      display: flex; /* Ensure the slides are displayed in a row */
+      transition: transform 0.5s ease-in-out; /* Smooth transition between slides */
+  }
+  
+  .gallery-carousel .slide {
+      flex: 0 0 auto; /* Ensure each slide takes up its own space */
+  }
+  
+  .gallery-carousel .slider-image {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensure images don't have any inline gaps */
+  }
+  
+  #prev-btn,
+  #next-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      cursor: pointer;
+      padding: 20px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.6);
+      z-index: 1; /* Ensure buttons appear above the slides */
+  }
+  
+  #prev-btn {
+      left: 0px;
+  }
+  
+  #next-btn {
+      right: 0px;
+  }
+  In this updated CSS:
 
 /* Stories */ 
 
