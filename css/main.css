@@ -6,6 +6,10 @@ body {
    font-size: 16px;
 }
 
+input, textarea {
+   text-indent: 10px;
+}
+
 .header-nav {
    height: 108px;
 
@@ -602,7 +606,7 @@ font-style: normal;
    }
 
    article {
-      width: 63%;
+      width: 70%;
    }
 
    .footer-sub {
@@ -953,7 +957,10 @@ input {
 }
 
 .medium-banner {
-   height: 404px;
+   height: 310px;
+   text-align: center;
+   margin: 0 auto;
+   max-width: 1200px;
 }
 
 input {
