@@ -41,7 +41,12 @@
 
 
 <div class="banner">
-
+    <picture>
+        <source media="(max-width: 767px)" srcset="images/stories_header_mobile3.jpg" />
+        <source media="(min-width: 768px)" srcset="images/stories_header_tablet_with_band.jpg" />
+        <source media="(min-width: 1200px)" srcset="images/stories_header_desktop_with_band.jpg" />
+        <img src="images/stories_header_mobile.jpg" alt="QUATRO with flowers behind it" />
+    </picture>
 </div>
 
 <div class="grid-con">
@@ -49,8 +54,12 @@
     <h1 class="stories-header col-span-full">Local Stories</h1>
 
     <div class="local-stories col-span-full m-col-start-2 m-col-end-12">
-        <div>
-        <img src="" alt="">
+        <div class="stories-img">
+            <picture>
+                <source media="(max-width: 1199px)" srcset="images/local-farmer-01-mobile.jpg" />
+                <source media="(min-width: 1200px)" srcset="images/local-farmer01-desktop.jpg" />
+                <img src="images/local-farmer-01-mobile.jpg" alt="Man in a greenhouse." />
+            </picture>
         </div>
         <article>
             <h3>Meet Sam</h3>
@@ -62,8 +71,12 @@
     </div>
 
     <div class= "article-2 local-stories col-span-full m-col-start-2 m-col-end-12">
-        <div>
-        <img src="" alt="">
+        <div class="stories-img">
+            <picture>
+                <source media="(max-width: 1199px)" srcset="images/farmer2-mobile.jpg" />
+                <source media="(min-width: 1200px)" srcset="images/farmer2-desktop.jpg" />
+                <img src="images/farmer2-mobile.jpg" alt="Older woman in a plant field" />
+            </picture>
         </div>
         <article>
             <h3>Introducing Reba,</h3>
