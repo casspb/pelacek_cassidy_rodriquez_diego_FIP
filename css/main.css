@@ -254,6 +254,10 @@ font-style: normal;
 
 /* contact */
 
+.medium-banner {
+   display: none;
+}
+
 .contact-page {
    background: url(../images/fruit-background2.jpg);
 }
@@ -583,8 +587,14 @@ ul li{
 
    
 .medium-banner {
-   background-color: grey;
-   height: 254.07px;
+   display: block;
+   overflow: hidden;
+   height: 304px;
+   width: 100%;
+   margin-bottom: 20px;
+}
+
+.medium-banner img {
    width: 100%;
 }
 
@@ -618,9 +628,6 @@ ul li {
    height: 638px;
 }
 
-.medium-banner {
-   height: 404px;
-}
 
 input {
    border-radius: 11px;

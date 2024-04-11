@@ -39,7 +39,11 @@
 <main class="contact-page">
 
     <div class="medium-banner">
-        
+        <picture>
+            <source media="(max-width: 1199px)" srcset="images/contact_banner_tablet.jpg" />
+            <source media="(min-width: 1200px)" srcset="images/contact_banner_desktop.jpg" />
+            <img src="images/contact_banner_tablet.jpg" alt="QUATRO bottles laid out." />
+        </picture>
     </div>
 
     <form action="submit" class="grid-con">
@@ -49,23 +53,23 @@
                 <h1>CONTACT US</h1>
             </li>
 
-            <li class="col-span-full m-col-start-3 m-col-end-6 l-col-start-2 l-col-end-6 input-small">
+            <li class="col-span-full m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6 input-small">
                 <label for="first-name">FIRST NAME</label>
                 <input type="text" id="first-name">
             </li>
-            <li class="col-span-full input-small m-col-start-8 m-col-end-11 l-col-start-8 l-col-end-12">
+            <li class="col-span-full input-small m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12">
                 <label for="last-name">LAST NAME </label>
                 <input type="text" id="last-name">
             </li>
-            <li class="col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-12">
+            <li class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12">
                 <label for="email">EMAIL</label>
                 <input type="email" id="email" class=" input-medium">
             </li>
-            <li class="col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-12">
+            <li class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12">
                 <label for="message">MESSAGE</label>
                 <textarea class= "input-large " id="message"></textarea>
             </li>
-            <li class="send col-start-1 col-end-3  m-col-start-3 m-col-end-5 l-col-start-2 ">
+            <li class="send col-start-1 col-end-3  m-col-start-2 m-col-end-5 l-col-start-2 ">
                 <input class="submit" type="submit" value="SUBMIT">
             </li>
         </ul>
