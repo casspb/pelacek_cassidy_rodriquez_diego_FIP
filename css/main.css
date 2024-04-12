@@ -425,6 +425,7 @@ font-style: normal;
  }
 
  article p {
+   line-height: 2em;
    font-size: 1em;
    padding: 26px 20px 26px 20px;
  }
