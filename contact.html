@@ -55,23 +55,30 @@
 
             <li class="col-span-full m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6 input-small">
                 <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name">
+                <input type="text" id="first-name"  placeholder="First Name">
             </li>
             <li class="col-span-full input-small m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12">
                 <label for="last-name">LAST NAME </label>
-                <input type="text" id="last-name">
+                <input type="text" id="last-name"  placeholder="Last Name">
             </li>
             <li class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12">
                 <label for="email">EMAIL</label>
-                <input type="email" id="email" class=" input-medium">
+                <input type="email" id="email" class="input-medium"  placeholder="quatrofan@gmail.com">
             </li>
             <li class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12">
                 <label for="message">MESSAGE</label>
-                <textarea class= "input-large " id="message"></textarea>
+                <textarea class="input-large" id="message"  placeholder="I love Quatro so much"></textarea>
             </li>
-            <li class="send col-start-1 col-end-3  m-col-start-2 m-col-end-5 l-col-start-2 ">
-                <input class="submit" type="submit" value="SUBMIT">
+            <li class="send col-start-1 col-end-3 m-col-start-2 m-col-end-5 l-col-start-2">
+                <input class="submit" type="button" value="SUBMIT" onclick="submitClicked()">
             </li>
+            <div class="custom-modal" id="submitModal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="closeSubmitModal()">&times;</span>
+                    <h2>Thank you for submitting!</h2>
+                    <p>We will review your submission shortly.</p>
+                </div>
+            </div>
         </ul>
     </form>
 </main>

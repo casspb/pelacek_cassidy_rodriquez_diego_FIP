@@ -59,3 +59,28 @@
     function subscribeClicked() {
         openModal();
     }
+
+    function submitClicked() {
+        var emailInput = document.getElementById("email").value;
+        if (isValidEmail(emailInput)) {
+            openSubmitModal();
+        } else {
+            alert("Please enter a valid email address.");
+        }
+    }
+    
+    function isValidEmail(email) {
+        // Simple email validation regex
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+    
+    function openSubmitModal() {
+        var modal = document.getElementById("submitModal");
+        modal.style.display = "block";
+    }
+    
+    function closeSubmitModal() {
+        var modal = document.getElementById("submitModal");
+        modal.style.display = "none";
+    }
