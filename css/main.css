@@ -1,6 +1,5 @@
 body {
    font-family: open-sans, poppins, sans-serif;
-   font-optical-sizing: auto;
    font-style: normal;
    margin: 0px;
    font-size: 16px;
@@ -105,6 +104,14 @@ header {
    position: absolute;
    left: 0;
    margin-top: 108px;
+}
+
+.bars {
+   transition: all .5s ease-in-out;
+}
+
+#nav-btn:checked ~ .bars {
+   transform: rotate(90deg);
 }
 
 #nav-btn:checked ~ ul{
