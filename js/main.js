@@ -42,3 +42,20 @@
     // Call updateSlideWidth initially to set the correct initial slide width
     updateSlideWidth();
 })();
+
+    // Function to open the modal
+    function openModal() {
+        var modal = document.getElementById("popupModal");
+        modal.style.display = "block";
+    }
+
+    // Function to close the modal
+    function closeModal() {
+        var modal = document.getElementById("popupModal");
+        modal.style.display = "none";
+    }
+
+    // Function to handle subscription button click
+    function subscribeClicked() {
+        openModal();
+    }

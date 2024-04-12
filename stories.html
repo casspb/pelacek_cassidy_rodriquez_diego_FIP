@@ -95,11 +95,19 @@
 <footer>
 
     <div class="footer-sub tablet-footer">
-            <div class="grid-con">
-                <input class="m-col-start-2 m-col-end-11" type="email">
-                <input class="m-col-end-12 subscribe" type="button" value="SUBSCRIBE">
-        </div>
+        <div class="grid-con">
+            <input class="m-col-start-2 m-col-end-11" type="email" placeholder="signup-for-newletters@gmail.com">
+            <input class="m-col-end-12 subscribe" type="button" value="SUBSCRIBE" onclick="subscribeClicked()">
+            <div class="modal" id="popupModal" style="display: none;">
+
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Thank you for subscribing!</h2>
+                        <p> We Promise To Only Bring You Good News, And Good Juice.</p>
+                </div>
+            </div>
     </div>
+</div>
 
     <div class="grid-con footer-container">
     <input class="tablet-footer l-col-start-1 l-col-end-3 find-us" type="button" value="FIND US">
