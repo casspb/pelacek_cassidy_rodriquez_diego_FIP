@@ -420,11 +420,12 @@ font-style: normal;
    background-color: white;
  }
 
- h3 {
+ .stories-article h3 {
+   padding-top: 20px;
    padding-left: 20px;
  }
 
- article p {
+ .stories-article p {
    line-height: 2em;
    font-size: 1em;
    padding: 26px 20px 26px 20px;
