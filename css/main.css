@@ -161,6 +161,7 @@ a {
    transition: transform 0.5s ease;
    width: 368px;
    height: 444px;
+   margin: 0 auto;
 }
 
 .product_card:hover {
@@ -212,9 +213,10 @@ padding-top: 1em;
 }
 
 .fact-box{
-   width: 400px;
+   width: 100%;
    height: 200px;
    border-radius: 40px;
+   margin: 0 auto;
 }
 
 .fact-box img{
@@ -526,6 +528,11 @@ ul li{
     text-align: center;
    border-bottom: 0;
    padding-bottom: 0;
+   margin: 0;
+  }
+
+  .top-nav li a:hover {
+   color:#C0338D;
   }
 
    /* index*/
