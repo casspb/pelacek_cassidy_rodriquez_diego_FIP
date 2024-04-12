@@ -320,66 +320,6 @@ input, textarea {
    color: white;
 }
 
- /* Footer */
-
-
-.tablet-footer {
-   display: none;
-}
-
- .footer-container {
-    background-color: #F2F240;
- }
-
- .social-icon {
-    width: 37.16px;
- }
-
-/* .foooter-1 {
-   margin-top: 0.5625su;
-} */
-
-footer {
-   width: 100%;
-   background-color: #F2F240;
-}
-
- .footer-nav li {
-   width: 100%;
-   display: inline;
- }
-
-.social-nav {
-   margin: 0 auto;
-   padding: 0;
-   margin-top: 30px;
-   margin-bottom: 13px;
-}
-
-.social-nav li {
-   display: inline;
-
-}
-
-.social-nav img {
-   height: 33.59px;
-
-}
-
- .footer-nav {
-   font-size: 1em;
-   font-family: open-sans, sans-serif;
-font-weight: 700;
-font-style: normal;
-   margin: 0 auto;
-   margin-top: 20px;
-   padding: 0;
- }
-
- .quatro_footer_4  {
-   display: none;
- }
-
  /* Stories */
 
 .stories-page {
@@ -488,6 +428,65 @@ ul li{
     margin-top: 0px;
  }
 
+ /* Footer */
+
+
+ .tablet-footer {
+   display: none;
+}
+
+ .footer-container {
+    background-color: #F2F240;
+ }
+
+ .social-icon {
+    width: 37.16px;
+ }
+
+/* .foooter-1 {
+   margin-top: 0.5625su;
+} */
+
+footer {
+   width: 100%;
+   background-color: #F2F240;
+}
+
+ .footer-nav li {
+   width: 100%;
+   display: inline;
+ }
+
+.social-nav {
+   margin: 0 auto;
+   padding: 0;
+   margin-top: 30px;
+   margin-bottom: 13px;
+}
+
+.social-nav li {
+   display: inline;
+
+}
+
+.social-nav img {
+   height: 33.59px;
+
+}
+
+ .footer-nav {
+   font-size: 1em;
+   font-family: open-sans, sans-serif;
+font-weight: 700;
+font-style: normal;
+   margin: 0 auto;
+   margin-top: 20px;
+   padding: 0;
+ }
+
+ .quatro_footer_4  {
+   display: none;
+ }
 
  /* ---tablet Sized Screens--- */
  @media screen and (min-width: 768px) {
@@ -571,11 +570,8 @@ ul li{
 }
 
 .product_card p{
-   font-family: poppins, sans-serif;
-font-style: normal;
    height: 194px;
    width: 147px;
-   font-size: 16px;
    padding-left: 1em;
 }
 
@@ -656,12 +652,6 @@ font-style: normal;
       display: flex;
       align-items: center;
       margin-right: 0px;
-   }
-
-
-   .stories-img img {
-      width: 100%;
-
    }
 
    article {
@@ -925,11 +915,9 @@ input {
    }
    
    .product_card p{
-      font-family: poppins, sans-serif;
-   font-style: normal;
       height: 290px;
       width: 206px;
-      font-size: 22px;
+      font-size: 1.375em;
       margin-left: 11em;
    }
    
