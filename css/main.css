@@ -1150,5 +1150,10 @@ input {
    margin-top: 0px;
 }
 
+.modal-content{
+   height: 50%;
+}
+
+
  }
 
