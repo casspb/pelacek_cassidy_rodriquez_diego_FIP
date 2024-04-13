@@ -323,7 +323,7 @@ padding-top: 0.5em;
       color: #FCF7EF;
       font-size: 1.25em;
       text-align: center;
-   
+      margin-top: 1em;
     }
    
     .modal-content h2{
@@ -777,6 +777,7 @@ font-style: normal;
    font-size: 2em;
    height: 70%;
 }
+
 
 
    /* contact */
