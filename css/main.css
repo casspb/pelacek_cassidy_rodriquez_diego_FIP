@@ -317,6 +317,10 @@ padding-top: 0.5em;
       width: 60%;
       height: 40%;
     }
+    
+    .contact-pop {
+      margin-top: 50%;
+    }
    
     .modal-content p{
       padding: 0.5em;
@@ -404,6 +408,7 @@ input, textarea {
 .submit {
    background-color: #C0338D;
    margin-top: 2em;
+   cursor: pointer;
 }
 
 .send input {
@@ -778,7 +783,9 @@ font-style: normal;
    height: 70%;
 }
 
-
+.contact-pop {
+   margin-top: 15%;
+}
 
    /* contact */
 
